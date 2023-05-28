@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    max-width: 100%;
+    margin: 0 auto;
+    height: 100%;
+}
+main{
+display: flex;
+height: 95vh;
+background: #E5E5E5;
+}
+main .encabezado{
+    margin: 1% 0 0 0;
+    width: 10%;
+}
+main .encabezado img{
+    width: 80px;
+}
+main .main{
+    width: 60%;
+}
+main .main .container-text{
+    height: 74vh;
+    position: relative;
+}
+main .main .container-text textarea{
+    border: none;
+    padding: 60px 0 100px 0;
+    outline: none;
+    font-family: 'Inter', sans-serif;
+    background: #E5E5E5;
+    width: 70%;
+    resize: none;
+    font-size: 20px;
+    font-weight: 400;
+    height: 100%;
+    color: #0A3871;
+}
+main .main .container-text textarea::placeholder{
+    color: #0A3871;
+    font-size: 20px;
+}
+.container-small small{
+    color: red;
+    visibility: hidden;
+    font-family: 'Inter', sans-serif;
+}
+.mostrar small {
+    visibility: visible;
+    position: absolute;
+    left: 0;
+    top: 90px;
+    color: red;
+}
+main .main .container-btn{
+    margin: 0;
+}
+main .main .container-btn .container-info{
+    display: flex;
+    margin-bottom:12px ;
+    color: #495057;
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+}
+main .main .container-btn .container-info i{
+    margin-right: 4px;
+}
+ .btn button{
+  padding: 15px 0;
+  border-radius: 18px;
+  width: 35%;
+  min-width: 170px;
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+  cursor: pointer;
+}
+main .main .container-btn .btn .encriptar{
+    background: #0A3871;
+    color: #D8DFE8;
+    border: none;
+}
+main .main .container-btn .btn .encriptar:hover{
+    background: #185fb7;
+    color: white;
+}
+ .desencriptar{
+    background:#D8DFE8 ;
+    color: #0A3871;
+    border: 1px solid #0A3871 ;
+}
+.desencriptar:hover{
+    background: white;
+    color: #09284d;
+}
+main .aside{
+    margin: 18px;
+    background: white;
+    width: 32%;
+    border-radius: 15px;
+}
+main .aside .container-img{
+    margin: 50px auto 20px auto;
+    width: 100%; 
+    max-width: 250px;
+}
+main .aside .container-img img{
+    width: 100%;
+}
+.imgnueva{
+    display: none;
+}
+main .aside .container-input{
+text-align: center;
+}
+main .aside .container-input span{
+   color: #343A40;
+font-size: 21px; 
+font-family: 'Inter', sans-serif;
+font-weight: 600;
+}
+main .aside .container-input textarea{
+    border: none;
+  margin-top: 20px;
+  width: 70%;
+  font-family: 'Inter', sans-serif;
+  resize: none;
+  outline: none;
+  font-size: 20px;
+  height: 18vh;
+}
+.large{
+    height: 74.5vh;
+}
+main .aside .container-input textarea::placeholder{
+    color: #495057;
+    text-align: center;
+}
+main .aside .btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 6px;
+}
+main .aside .btn button{
+    width: 65%; 
+    font-family: 'Inter', sans-serif;
+}
+footer{
+    text-align: center;
+    height: 5vh;
+    padding-top: 5px;
+    color: white;
+    background: #a4a4a4;
+}
+@media(max-width:768px) {
+    main{
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+    }
+    main .main{
+        width: 100%;
+    }
+    main .main .container-small{
+        margin-left: 16px;
+    }
+    main .main .container-btn{
+       padding-left: 14px;
+    }
+    main .main .container-btn .btn{
+        width: 100%;
+    }
+    main .main .container-btn .btn button{
+        width: 47.3%;
+    }
+    main .main .container-btn .btn .encriptar{
+        margin-right: 4px;
+    }
+    main .aside{
+        width: 93%;
+    }
+    main .aside .container-img{
+        display: none;
+    }
+    main .aside .container-input{
+        margin-top: 10px;
+    }
+    main .aside .container-input textarea{
+        height: 10vh;
+    }
+    .large{
+        height: 100%;
+        min-height: 20vh;
+    }
+    main .aside .btn{
+        margin-bottom: 10px;
+        
+    }
+}
+@media(max-width:450px){
+    main .main .container-btn .btn{
+        flex-direction: column;
+       display: flex;
+    }
+    main .main .container-btn .btn button{
+        width: 97%;
+    }
+    main .main .container-btn .btn .encriptar{
+        margin-bottom: 12px;
+    }
+    main .aside{
+        width: 90%;
+        margin: 14px auto ;
+    }
+}
+
